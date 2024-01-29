@@ -10,6 +10,7 @@ import {
   IonFab,
   IonFabButton,
   IonIcon,
+  IonButton,
 } from '@ionic/angular/standalone';
 import { Component, OnInit } from '@angular/core';
 import {
@@ -23,13 +24,16 @@ import { AlertController } from '@ionic/angular';
 import { NgFor, NgIf } from '@angular/common';
 import { addIcons } from 'ionicons';
 import { add } from 'ionicons/icons';
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
+  providers: [InAppBrowser],
   imports: [
+    IonButton,
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -49,8 +53,12 @@ export class HomePage implements OnInit {
   public isSupported = false;
   public barcodes!: Barcode[];
   public barcodeResults!: any;
+  private brow: any;
 
-  constructor(private alertController: AlertController) {
+  constructor(
+    private alertController: AlertController,
+    private inAppBrowser: InAppBrowser
+  ) {
     addIcons({ add });
   }
 
@@ -63,6 +71,13 @@ export class HomePage implements OnInit {
     });
   }
 
+  public inAppBrowser123(): void {
+    const url = 'https://www.google.com';
+    this.brow = this.inAppBrowser.create(
+      url,
+      'presentationstyle=formsheet,toolbarposition=top,fullscreen=no,hideurlbar=yes,toolbarcolor=#176bff,closebuttoncolor=#ffffff,navigationbuttoncolor=#ffffff'
+    );
+  }
   async scan(): Promise<void> {
     const granted = await this.requestPermissions();
     if (!granted) {
