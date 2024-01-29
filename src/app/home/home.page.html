@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Barcode Scanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ng-container *ngIf="!barcodes">
+      <ion-label>No barcodes found.</ion-label>
+    </ng-container>
+    <ng-container *ngIf="barcodes">
+      <ion-item *ngFor="let barcode of barcodes">
+        <ion-label position="stacked">{{ barcode.format }}</ion-label>
+        <ion-input type="text" [value]="barcode.rawValue"></ion-input>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scan()" [disabled]="!isSupported">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
