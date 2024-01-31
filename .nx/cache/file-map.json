@@ -13,11 +13,11 @@
     "@awesome-cordova-plugins/in-app-browser": "^6.6.0",
     "@capacitor-mlkit/barcode-scanning": "^5.3.0",
     "@capacitor/android": "^5.6.0",
-    "@capacitor/app": "5.0.6",
+    "@capacitor/app": "5.0.7",
     "@capacitor/core": "5.6.0",
-    "@capacitor/haptics": "5.0.6",
-    "@capacitor/keyboard": "5.0.7",
-    "@capacitor/status-bar": "5.0.6",
+    "@capacitor/haptics": "5.0.7",
+    "@capacitor/keyboard": "5.0.8",
+    "@capacitor/status-bar": "5.0.7",
     "@ionic/angular": "^7.6.6",
     "cordova-plugin-inappbrowser": "^6.0.0",
     "ionicons": "^7.2.2",
@@ -34,10 +34,10 @@
     "@angular/compiler-cli": "^17.1.1",
     "@angular/language-service": "^17.1.1",
     "@capacitor/cli": "5.6.0",
-    "@ionic/angular-toolkit": "^11.0.0",
+    "@ionic/angular-toolkit": "^11.0.1",
     "@types/jasmine": "~5.1.4",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jsdoc": "48.0.4",
@@ -91,11 +91,11 @@
       },
       {
         "file": "android/app/build.gradle",
-        "hash": "4462205925370081679"
+        "hash": "9941748409419814004"
       },
       {
         "file": "android/app/capacitor.build.gradle",
-        "hash": "10498039344981596460"
+        "hash": "11771884462221256784"
       },
       {
         "file": "android/app/proguard-rules.pro",
@@ -107,11 +107,11 @@
       },
       {
         "file": "android/app/src/main/AndroidManifest.xml",
-        "hash": "17149069098332847269"
+        "hash": "7555122839691243025"
       },
       {
-        "file": "android/app/src/main/java/io/ionic/starter/MainActivity.java",
-        "hash": "18189106575645248423"
+        "file": "android/app/src/main/java/com/bishen/basf/MainActivity.java",
+        "hash": "1715393240940391950"
       },
       {
         "file": "android/app/src/main/res/drawable-land-hdpi/splash.png",
@@ -243,7 +243,7 @@
       },
       {
         "file": "android/app/src/main/res/values/strings.xml",
-        "hash": "6553935426808056410"
+        "hash": "15805569255889441039"
       },
       {
         "file": "android/app/src/main/res/values/styles.xml",
@@ -263,7 +263,7 @@
       },
       {
         "file": "android/capacitor.settings.gradle",
-        "hash": "10070083628971449326"
+        "hash": "16284354097676470557"
       },
       {
         "file": "android/gradle.properties",
@@ -299,7 +299,7 @@
       },
       {
         "file": "capacitor.config.ts",
-        "hash": "8680335550218628093"
+        "hash": "16074638472342155754"
       },
       {
         "file": "ionic.config.json",
@@ -311,11 +311,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "10833114737287356846"
+        "hash": "1162662514838448676"
       },
       {
         "file": "package.json",
-        "hash": "16958138568493705294"
+        "hash": "12416263006188026929"
       },
       {
         "file": "src/app/app.component.html",
@@ -339,11 +339,11 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "18409062817987613207"
+        "hash": "4078167886658011099"
       },
       {
         "file": "src/app/home/home.page.scss",
-        "hash": "11548449596956901999"
+        "hash": "4180794773178309148"
       },
       {
         "file": "src/app/home/home.page.spec.ts",
@@ -351,7 +351,7 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "11848386492257917494"
+        "hash": "10865438896109503224"
       },
       {
         "file": "src/assets/icon/favicon.png",

@@ -80,6 +80,7 @@ export class HomePage implements OnInit {
   }
   async scan(): Promise<void> {
     const granted = await this.requestPermissions();
+    alert(granted);
     if (!granted) {
       this.presentAlert();
       return;
